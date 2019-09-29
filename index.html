@@ -5,16 +5,154 @@
         Bertu's Project
     </title>
     <style>
-        body {
-        color:rgb(47, 137, 186)
+     body {
+            background-color: burlywood;
+            font-family: 'Comic Sans MS';
+                  }
+       
+        nav {
+            background-color:darkslategray;
+            position: fixed;
+            height: 80px;
+            width: 100%;
+            top: 0px;
+            left: 0px;
+            text-align: center;           
+            font-size:larger;
+            color:aliceblue;
         }
-       img:hover {
-           opacity:0.5;
+
+        .nav-link {
+            text-decoration: none;           
+            display: inline-block;
+            margin: 55px;
+            margin-bottom: 15px;
+            margin-top: 25px;
+            color: aliceblue;
+        }
+
+            .nav-link:hover {
+                font-weight: bold;
+            }
+      
+        main {
+            margin: 100px 0px 0px 0px;
+            background-color: darkgray;
+        }
+
+        #navbar {
+        }
+
+        #welcome-section {
+            display: block;
+            text-align: center;
+            height: 100vh;
+            background-color: burlywood;
+            
+        }
+            #welcome-section h1 {
+                display: block;
+                padding-top: 30vh;
+            }
+        #projects {
+            display: block;
+            text-align: center;
+            height: 100vh;
+            background-color: darkgoldenrod;
+            padding-top: 30vh;
+        }
+            #projects h1 {
+                display: block;
+                
+            }
+        #boxes {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .project-tile {
+        width: 200px;
+        height: 200px;
+        margin: 20px;
+        }
+
+        .imagen {
+            width: 200px;
+            height: 200px;
+
+        }
+            .imagen:hover {
+                filter: brightness(50%);
+            }
+        #About_Me {
+            display: block;
+            text-align: center;
+            height: 100vh;
+            color: black;
+            padding-top: 50vh;
+            background-color: burlywood;
+        }
+
+            #About_Me a {
+                text-decoration: none;
+                color: darkslategray;
+            }
+                #About_Me a:hover {
+                    font-weight: bold;
+                }
+                
+                @media (max-width:768px) {
+                    .nav-link {
+       
+                margin: 10px;
+                margin-bottom: 15px;
+                margin-top: 25px;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Bertu's Project!</h1>
-    <a href="https://es.wikipedia.org/wiki/Wikipedia:Portada"><img src="https://lamilongadelmarinero.files.wordpress.com/2013/03/wikipedia.png" alt="wikipedia_Image" width="100px"/></a>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <header>
+        <nav id="navbar">
+            <a href="#welcome-section" class="nav-link">Welcome</a>
+            <a href="#projects" class="nav-link">Projects</a>
+            <a href="#About_Me" class="nav-link">About me</a>
+        </nav>
+
+    </header>
+    <main>
+        <section id="welcome-section">
+            <h1>I am a developer</h1>
+        </section>
+        <secion id="projects">
+            <div id="project-tile">
+                <!--User Story #5: The projects section should contain at least one link to a project.-->
+                <h1>May I introduce you to my projects?</h1>
+                <div id="boxes">
+                    <div class="project-tile">
+                        <a href="https://codepen.io/albertu88/full/yGGbzZ" target="_blank">
+                            <img class="imagen" src="https://upload.wikimedia.org/wikipedia/commons/b/ba/Norman_Borlaug.jpg" alt="imagen 1" />
+                        </a>
+                    </div>
+                    <div class="project-tile">
+                        <a href="https://codepen.io/albertu88/full/pqmdpO" target="_blank">
+                            <img class="imagen" src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Mantelb%C3%B6gen.JPG" alt="imagen 2" />
+                        </a>
+                    </div>
+                    <div class="project-tile">
+                        <a href="http://localhost/platzi/freecodeCamp/Responsive%20web%20design/LandingPage.html#boxes" target="_blank">
+                            <img class="imagen" src="https://upload.wikimedia.org/wikipedia/commons/7/76/Pagina_web_autoreferente.jpg" alt="imagen 3" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </secion>
+        <section id="About_Me">
+            <!--User Story #8: My portfolio should have a link with an id of profile-link, which opens my GitHub or FCC profile in a new tab.-->
+            My profile: <a href="https://github.com/albertu88" id="profile-link" target="_blank">      https://github.com/albertu88 </a>
+        </section>
+    </main>
 </body>
 </html>
