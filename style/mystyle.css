@@ -1,0 +1,108 @@
+body {
+    background-color: burlywood;
+    font-family: 'Comic Sans MS';
+}
+
+nav {
+    background-color: darkslategray;
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    text-align: center;
+    font-size: larger;
+    color: aliceblue;
+}
+
+.nav-link {
+    text-decoration: none;
+    display: inline-block;
+    margin: 55px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    color: aliceblue;
+}
+
+    .nav-link:hover {
+        font-weight: bold;
+    }
+
+main {
+    margin: 100px 0px 0px 0px;
+    background-color: darkgray;
+}
+
+#navbar {
+}
+
+#welcome-section {
+    display: block;
+    text-align: center;
+    height: 100vh;
+    background-color: burlywood;
+}
+
+    #welcome-section h1 {
+        display: block;
+        padding-top: 30vh;
+    }
+
+#projects {
+    display: block;
+    text-align: center;
+    height: 100vh;
+    background-color: darkgoldenrod;
+    padding-top: 30vh;
+}
+
+    #projects h1 {
+        display: block;
+    }
+
+#boxes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project-tile {
+    width: 200px;
+    height: 200px;
+    margin: 20px;
+}
+
+.imagen {
+    width: 200px;
+    height: 200px;
+}
+
+    .imagen:hover {
+        filter: brightness(50%);
+    }
+
+#About_Me {
+    display: block;
+    text-align: center;
+    height: 100vh;
+    color: black;
+    padding-top: 50vh;
+    background-color: burlywood;
+}
+
+    #About_Me a {
+        text-decoration: none;
+        color: darkslategray;
+    }
+
+        #About_Me a:hover {
+            font-weight: bold;
+        }
+
+@media (max-width:768px) {
+    .nav-link {
+        margin: 10px;
+        margin-bottom: 15px;
+        margin-top: 25px;
+    }
+}
